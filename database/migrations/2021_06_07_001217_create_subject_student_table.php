@@ -13,7 +13,7 @@ class CreateSubjectStudentTable extends Migration
      */
     public function up()
     {
-        Schema::create('subject_student', function (Blueprint $table) {
+        Schema::create('student_subject', function (Blueprint $table) {
             $table->unsignedBigInteger('student_id');
             $table->foreign('student_id')->references('id')->on('students')
                 ->onDelete('cascade'); // si eliminas el usuario, se elimina la referencia.

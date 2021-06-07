@@ -20,6 +20,8 @@ class DatabaseSeeder extends Seeder
         $this->call(SkillSeeder::class);
         $this->call(TeamSeeder::class);
         $this->call(UserSeeder::class);
+        $this->call(SubjectSeeder::class);
+        $this->call(StudentSeeder::class);
     }
 
     public function truncateTables(array $tables)
